@@ -9,7 +9,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC
                            )
 
 target_link_directories(${PROJECT_NAME} PUBLIC 
-                        ../../third_party/opencl/lib/
+                        ../../third_party/opencl/lib_x86/
                             )
 
 target_link_libraries(${PROJECT_NAME} PUBLIC 
