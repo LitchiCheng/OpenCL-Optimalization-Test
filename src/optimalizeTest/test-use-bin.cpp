@@ -131,16 +131,16 @@ int main(int argc, char const *argv[])
         printf("Error: Getting Context Info (device list, clGetContextInfo):%d\n", status);
         return EXIT_FAILURE;
     }
-    FILE *fp= fopen("./kernel_binary.bin", "rb");
-    //获取二进制的大小
-    size_t binarySize;
-    fseek(fp, 0, SEEK_END);
-    binarySize = ftell(fp);
-    rewind(fp);
-    //加载二进制文件
-    unsigned char *programBinary = new unsigned char[binarySize];
-    fread(programBinary, 1, binarySize, fp);
-    fclose(fp);
+    // FILE *fp= fopen("./kernel_binary.bin", "rb");
+    // //获取二进制的大小
+    // size_t binarySize;
+    // fseek(fp, 0, SEEK_END);
+    // binarySize = ftell(fp);
+    // rewind(fp);
+    // //加载二进制文件
+    // unsigned char *programBinary = new unsigned char[binarySize];
+    // fread(programBinary, 1, binarySize, fp);
+    // fclose(fp);
     // cl_program program;
     // auto binary_start = GetCurTime();
     // program = clCreateProgramWithBinary(context,
